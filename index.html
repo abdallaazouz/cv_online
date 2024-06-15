@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة إنشاء السيرة الذاتية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إنشاء السيرة الذاتية</h1>
+        <form>
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" required>
+            
+            <label for="birthDate">تاريخ الميلاد:</label>
+            <input type="date" id="birthDate" required>
+
+            <label for="socialStatus">الحالة الاجتماعية:</label>
+            <input type="text" id="socialStatus" required>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" required>
+            
+            <label for="phone">رقم الهاتف:</label>
+            <input type="text" id="phone" required>
+            
+            <label for="experience">الخبرات:</label>
+            <textarea id="experience" required></textarea>
+            
+            <label for="education">التعليم:</label>
+            <textarea id="education" required></textarea>
+
+            <label for="training">الدورات التدريبية:</label>
+            <textarea id="training" required></textarea>
+            
+            <label for="skills">المهارات:</label>
+            <textarea id="skills" required></textarea>
+            
+            <label for="profilePicture">الصورة الشخصية:</label>
+            <input type="file" id="profilePicture" accept="image/*">
+            
+            <button type="button" id="generatePdf">إنشاء ملف PDF</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
